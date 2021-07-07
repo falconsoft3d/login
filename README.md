@@ -1,4 +1,4 @@
-# 01 Nodejs Passport Mongodb
+# 1. Nodejs Passport Mongodb
 ```
 $ nodejs-passport-mongodb
 $ npm install
