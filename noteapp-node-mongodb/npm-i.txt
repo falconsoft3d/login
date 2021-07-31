@@ -1,0 +1,5 @@
+npm init -y
+npm i express express-handlebars express-session method-override mongoose passport passport-local bcryptjs connect-flash
+cd src
+mkdir config helpers models public routes views
+npm i nodemon -D
