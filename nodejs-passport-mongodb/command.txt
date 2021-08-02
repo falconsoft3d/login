@@ -1,3 +1,0 @@
-npm i bcrypt-nodejs connect-flash ejs-mate express mongoose morgan passport passport-local
-npm i nodemon -D
-npm run dev

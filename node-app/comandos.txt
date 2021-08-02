@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=-bI0diefasA&t=1874s
+https://uigradients.com/#BlueRaspberry
+
+
+npm init -y
+npm i express express-handlebars express-session method-override mongoose passport passport-local bcryptjs connect-flash
+cd src
+mkdir config models helpers public routes views
+npm i nodemon -D
