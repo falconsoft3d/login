@@ -1,10 +1,16 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
+import config from "./config";
 
-mongoose.connect('mongodb://localhost/note-app',{
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-})
-    .then(db => console.log('Db is Connected'))
-    .catch(err => console.error(err));
+(async () => {
+  try {
+    const db = await mongoose.connect(config.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false,
+      useCreateIndex: true,
+    });
+    console.log("Mongodb is connected to", db.connection.host);
+  } catch (error) {
+    console.error(error);
+  }
+})();
